@@ -1,0 +1,24 @@
+<!-- pages/add/index.wxml -->
+<view class="add">
+  <view class="title">
+    <ul>
+      <li class="activedLi">支出</li>
+      <li>收入</li>
+    </ul>
+    <span class="cancle">取消</span>
+  </view>
+  <view class="con">
+    <ul class="con-pay">
+      <li>
+        <span></span>
+        <span>餐饮</span>
+      </li>
+    </ul>
+    <ul class="con-income">
+      <li>
+        <span></span>
+        <span>餐饮</span>
+      </li>
+    </ul>
+  </view>
+</view>

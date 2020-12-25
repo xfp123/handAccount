@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/add/index",
+    "pages/detailed/index",
+    "pages/chart/index",
+    "pages/community/index",
+    "pages/my/index",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffcd00",
+    "navigationBarTitleText": "记录&手账",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "backgroundColor": "#fff",
+    "color": "#a9b7b7",
+    "selectedColor": "#000",  
+    "list":[
+    {
+      "pagePath":"pages/detailed/index",
+      "iconPath": "images/tab-bar/detailed.png",
+      "selectedIconPath": "images/tab-bar/detailed-press.png",  
+      "text":"明细"
+    },
+    {
+      "pagePath":"pages/chart/index",
+      "iconPath": "images/tab-bar/chart.png",  
+      "selectedIconPath": "images/tab-bar/chart-press.png",  
+      "text":"图表"
+    },
+    {
+      "pagePath":"pages/add/index",
+      "iconPath": "images/tab-bar/add.png",  
+      "selectedIconPath": "images/tab-bar/add-press.png",  
+      "text":"记账"
+    },
+    {
+      "pagePath":"pages/community/index",
+      "iconPath": "images/tab-bar/community.png",  
+      "selectedIconPath": "images/tab-bar/community-press.png",  
+      "text":"社区"
+    },
+    {
+      "pagePath":"pages/my/index",
+      "iconPath": "images/tab-bar/my.png",  
+      "selectedIconPath": "images/tab-bar/my-press.png",  
+      "text":"我的"
+    }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,148 @@
+<!-- 明细页面 -->
+<view class="detailed">
+  <!-- 头部 -->
+  <view class="header">
+    <!-- 总明细 -->
+    <view class="total">
+      <!-- 日历 -->
+      <view class="selected-date" bindtap="showPickFun">
+        <view class="year">{{year}}年</view>
+        <view class="month">
+          <span class="month-con">{{month+1}}</span>
+          月
+          <span class="arrow"></span>
+        </view>
+      </view>
+      <!-- 总明细 -->
+      <view class="total-con">
+        <ul>
+          <li>
+            <span>收入</span>
+            <span class="num">0.00</span>
+          </li>
+          <li>
+            <span>支出</span>
+            <span class="num">0.00</span>
+          </li>
+        </ul>
+      </view>
+    </view>
+    <!-- 菜单 -->
+    <view class="menu">
+      <ul>
+        <li>
+          <span class='iconfont icon-zd-copy'></span>
+          <span>账单</span>
+        </li>
+        <li>
+          <span class='iconfont icon-yusuan'></span>
+          <span>预算</span>
+        </li>
+        <li>
+          <span class='iconfont icon-zichan'></span>
+          <span>资产管家</span>
+        </li>
+        <li>
+          <span class='iconfont icon-licai'></span>
+          <span>理财知识</span>
+        </li>
+        <li>
+          <span class='iconfont icon-gouwu'></span>
+          <span>购物返现</span>
+        </li>
+      </ul>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class="section">
+    <ul>
+      <li class="date-desc">
+        <span>12月21日</span>
+        <span>星期一</span>
+        <span>支出：208</span>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-fan'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-yule'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-jiaotong'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-meirong'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+    </ul>
+    <ul>
+      <li class="date-desc">
+        <span>12月21日</span>
+        <span>星期一</span>
+        <span>支出：208</span>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-fan'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-yule'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-jiaotong'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+      <li class="section-item">
+        <span class='iconfont icon-meirong'></span>
+        <div class="item-con">
+          <span>饭</span>
+          <span>-20</span>
+        </div>
+      </li>
+    </ul>
+  </view>
+  <!-- 日历 -->
+  <view class="date-con" wx:if="{{isShowPick}}">
+    <picker-view class="calendar" indicator-style="height: 40px;" value="{{value}}" bindchange="bindEvent">
+      <picker-view-column>
+        <view wx:for="{{years}}" wx:key="{{years}}" style="line-height: 40px; text-align: center;">
+          {{item}}年
+        </view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{months}}" wx:key="{{months}}" style="line-height: 40px; text-align: center;">
+          {{item}}月
+        </view>
+      </picker-view-column>
+    </picker-view>
+    <view class="btn">
+      <button class="mini-btn" size="mini" bindtap="cancleBtn">取消</button>
+      <button class="mini-btn save-btn" size="mini" bindtap="saveBtn">确定</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+步骤：
+1、标题栏  在app.json文件里面，通过window对象里面的属性进行设置
+2、导航栏TabBar  在app.json文件里面，tabBar 是一个数组，只能配置最少2个、最多5个 tab，tab 按数组的顺序排序
+Tip： 通过页面跳转（wx.navigateTo）或者页面重定向（wx.redirectTo）所到达的页面，即使它是定义在 tabBar 配置中的页面，也不会显示底部的 tab 栏。
+3、wxss  rpx单位是微信小程序中css的尺寸单位，rpx可以根据屏幕宽度进行自适应。 
+开发微信小程序时设计师可以用 iPhone6 作为视觉稿的标准。这样的话，设计图上量出来的尺寸是多少px就是多少rpx
+4、微信小程序实时将less编译为wxss
+npm或者yarn全局安装wxss-cli ：npm install -g wxss-cli
+运行waxes-cli命令: wxss ./pages (实时监听pages目录下的.css或者.less文件，转化为.wxss文件)
+5、事件绑定：
+普通事件绑定：bindtap(ps：不是bindtab)
+6、小程序中使用 icon：阿里图标库-图标-点击购物车，并点击“添加至项目”-新建项目名称，并点击“Font class 暂无代码，点击生成”-复制代码链接-在浏览器中打开复制css代码。
+在wxml中使用<span class='iconfont icon-yule'></span>
+7、
+
